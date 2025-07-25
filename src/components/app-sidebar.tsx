@@ -1,12 +1,10 @@
 import { SidebarMenuButton, useSidebar } from "@/components/ui/sidebar";
-import { Code2, FileDiff, SquareTerminal } from "lucide-react";
+import { Code2, File, FileDiff, HomeIcon, SquareTerminal } from "lucide-react";
 import * as React from "react";
 
-import { NavUser } from "@/components/nav-user";
 import {
   Sidebar,
   SidebarContent,
-  SidebarFooter,
   SidebarGroup,
   SidebarHeader,
   SidebarMenu,
@@ -14,7 +12,6 @@ import {
   SidebarRail,
 } from "@/components/ui/sidebar";
 
-// Microfrontend tools definition
 export type Tool = {
   name: string;
   icon: React.ElementType;
@@ -24,7 +21,7 @@ export type Tool = {
 const defaultTools: Tool[] = [
   {
     name: "Markdown Previewer",
-    icon: SquareTerminal,
+    icon: File,
     url: "https://stakem-markdown-previewer.netlify.app/",
   },
   {
@@ -72,7 +69,7 @@ export function AppSidebar({
                 className={selectedTool == null ? "bg-muted" : ""}
                 onClick={() => onSelectTool?.(null)}
               >
-                <SquareTerminal />
+                <HomeIcon />
                 <span>Home</span>
               </SidebarMenuButton>
             </SidebarMenuItem>
@@ -92,9 +89,6 @@ export function AppSidebar({
           </SidebarMenu>
         </SidebarGroup>
       </SidebarContent>
-      <SidebarFooter>
-        <NavUser user={{ name: "Guest", email: "guest@example.com", avatar: "/avatars/guest.jpg" }} />
-      </SidebarFooter>
       <SidebarRail />
     </Sidebar>
   );
