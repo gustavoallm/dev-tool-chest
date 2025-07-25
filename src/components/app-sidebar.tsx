@@ -25,17 +25,17 @@ const defaultTools: Tool[] = [
   {
     name: "Markdown Previewer",
     icon: SquareTerminal,
-    url: "http://localhost:81",
+    url: "https://stakem-markdown-previewer.netlify.app/",
   },
   {
     name: "JSON Parser",
     icon: Code2,
-    url: "http://localhost:82",
+    url: "https://stakem-json-parser.netlify.app/",
   },
   {
     name: "File Diff Viewer",
     icon: FileDiff,
-    url: "http://localhost:83",
+    url: "https://stakem-file-diff-viewer.netlify.app",
   },
 ];
 
