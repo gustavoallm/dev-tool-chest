@@ -20,7 +20,6 @@ export default function Layout() {
   const [loading, setLoading] = useState(false);
   const [pendingTool, setPendingTool] = useState<Tool | null>(null);
 
-  // Handler para seleção de ferramenta/página
   const handleSelectTool = useCallback(
     (tool: Tool | null) => {
       if (tool === selectedTool) return;
@@ -30,7 +29,6 @@ export default function Layout() {
     [selectedTool]
   );
 
-  // Controla o loading com delay mínimo de 1s
   useEffect(() => {
     if (!loading) return;
     const timeout = setTimeout(() => {

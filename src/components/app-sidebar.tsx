@@ -1,5 +1,5 @@
 import { SidebarMenuButton, useSidebar } from "@/components/ui/sidebar";
-import { Code2, File, FileDiff, HomeIcon, SquareTerminal } from "lucide-react";
+import { Code2, File, FileDiff, HomeIcon, Image, SquareTerminal } from "lucide-react";
 import * as React from "react";
 
 import {
@@ -33,6 +33,11 @@ const defaultTools: Tool[] = [
     name: "File Diff Viewer",
     icon: FileDiff,
     url: "https://stakem-file-diff-viewer.netlify.app",
+  },
+  {
+    name: "Image to Text",
+    icon: Image,
+    url: "https://stakem-image-to-text.netlify.app/",
   },
 ];
 
