@@ -37,7 +37,7 @@ const defaultTools: Tool[] = [
   {
     name: "Image to Text",
     icon: Image,
-    url: "https://stakem-image-to-text.netlify.app/",
+    url: "https://stakem-image-to-text.netlify.app",
   },
 ];
 
